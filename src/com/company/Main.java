@@ -7,6 +7,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         LoopTest loopTest = new LoopTest(scanner);
-        loopTest.Test();
+        loopTest.test();
     }
 }
