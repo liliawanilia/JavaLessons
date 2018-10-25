@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 /**
  * Created by pawelk on 25/10/2018.
 
@@ -67,50 +69,111 @@ package com.company;
  5 25 125 625 3125
  */
 public class LoopTest {
-    public LoopTest() {
+    private Scanner scanner;
 
+    public LoopTest(Scanner scanner) {
+        this.scanner = scanner;
     }
 
-    public void PrintColumn(int numberOfRows) {
-        PrintIntro(1);
+    public void test() {
+        System.out.println("Program will print stars pattern. Please select version:" +
+                "\n1 - column" +
+                "\n2 - row" +
+                "\n3 - square" +
+                "\n4 - triangle v1" +
+                "\n5 - triangle v2" +
+                "\n6 - diagonal v1" +
+                "\n7 - diagonal v2" +
+                "\n8 - power matrix");
+
+        int selectedPattern = scanner.nextInt();
+        switch (selectedPattern) {
+            case 1:
+            {
+                printColumn(5);
+                break;
+            }
+            case 2:
+            {
+                printRow(5);
+                break;
+            }
+            case 3:
+            {
+                printSquare(5);
+                break;
+            }
+            case 4:
+            {
+                printLeftTriangle(5);
+                break;
+            }
+            case 5:
+            {
+                printRightTriangle(5);
+                break;
+            }
+            case 6:
+            {
+                printDiagonalPattern(5);
+                break;
+            }
+            case 7:
+            {
+                printDiagonalSecondPattern(5);
+                break;
+            }
+            case 8:
+            {
+                printPowers(5);
+                break;
+            }
+            default: {
+                System.out.println("You selected wrong value!");
+            }
+        }
+    }
+
+    private void printColumn(int numberOfRows) {
+        printIntro(1);
         for (int i = 0; i < numberOfRows; i++) {
             System.out.println("*");
         }
-        PrintOutro();
+        printOutro();
     }
 
-    public void PrintRow(int numberOfColumns) {
-        PrintIntro(2);
+    private void printRow(int numberOfColumns) {
+        printIntro(2);
         for (int i = 0; i < numberOfColumns; i++) {
             System.out.print("*");
         }
-        PrintOutro();
+        printOutro();
     }
 
-    public void PrintSquare(int sideSquareLength) {
-        PrintIntro(3);
+    private void printSquare(int sideSquareLength) {
+        printIntro(3);
         for (int i = 0; i < sideSquareLength; i++) {
             for (int j = 0; j < sideSquareLength; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
-        PrintOutro();
+        printOutro();
     }
 
-    public void PrintLeftTriangle(int sideSquareLength){
-        PrintIntro(4);
+    private void printLeftTriangle(int sideSquareLength){
+        printIntro(4);
         for (int i = 0; i < sideSquareLength; i++) {
             for (int j = 0; j < sideSquareLength - i; j++) {
                 System.out.print("*");
             }
             System.out.println();
         }
-        PrintOutro();
+        printOutro();
     }
 
-    public void PrintRightTriangle(int sideSquareLength){
-        PrintIntro(5);
+    private void printRightTriangle(int sideSquareLength){
+        printIntro(5);
         for (int i = 0; i < sideSquareLength; i++) {
             for (int j = 0; j < sideSquareLength; j++) {
                 if (i > j) {
@@ -121,11 +184,11 @@ public class LoopTest {
             }
             System.out.println();
         }
-        PrintOutro();
+        printOutro();
     }
 
-    public void PrintDiagonalPattern(int sideSquareLength){
-        PrintIntro(6);
+    private void printDiagonalPattern(int sideSquareLength){
+        printIntro(6);
         for (int i = 0; i < sideSquareLength; i++) {
             for (int j = 0; j < sideSquareLength; j++) {
                 if ((j%2 == 0 && i%2 == 0) || (j%2 != 0 && i%2 != 0)) {
@@ -137,11 +200,11 @@ public class LoopTest {
             }
             System.out.println();
         }
-        PrintOutro();
+        printOutro();
     }
 
-    public void PrintDiagonalSecondPattern(int sideSquareLength) {
-        PrintIntro(7);
+    private void printDiagonalSecondPattern(int sideSquareLength) {
+        printIntro(7);
         for (int i = 0; i < sideSquareLength; i++) {
             for (int j = 0; j < sideSquareLength; j++) {
                 if ((j%2 != 0 && i%2 == 0) || (j%2 == 0 && i%2 != 0)) {
@@ -153,28 +216,28 @@ public class LoopTest {
             }
             System.out.println();
         }
-        PrintOutro();
+        printOutro();
     }
 
-    public void PrintPowers(int sideSquareLength) {
-        PrintIntro(8);
+    private void printPowers(int sideSquareLength) {
+        printIntro(8);
         for (int i = 0; i < sideSquareLength; i++) {
             for (int j = 0; j < sideSquareLength; j++) {
                 System.out.print((int)(Math.pow(i+1, j+1)) + " ");
             }
             System.out.println();
         }
-        PrintOutro();
+        printOutro();
     }
 
-    private void PrintIntro(int taskNumber) {
+    private void printIntro(int taskNumber) {
         System.out.println();
         System.out.println("Task " + taskNumber + ":");
         System.out.println("----------------------------------------------------------------------");
         System.out.println();
     }
 
-    private void PrintOutro(){
+    private void printOutro(){
         System.out.println();
         System.out.println("----------------------------------------------------------------------");
         System.out.println();
