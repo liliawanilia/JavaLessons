@@ -15,7 +15,8 @@ public class User {
     private boolean byPost;
     private int bonusPoints;
 
-    public User(String firstName, String lastName, String email, String phoneNumber, String address, boolean byEmail, boolean byPhone, boolean byText, boolean byPost) {
+    public User(String firstName, String lastName, String email, String phoneNumber, String address,
+                boolean byEmail, boolean byPhone, boolean byText, boolean byPost) {
 
         this.firstName = firstName;
         this.lastName = lastName;

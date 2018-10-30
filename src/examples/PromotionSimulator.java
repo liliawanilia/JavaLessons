@@ -15,7 +15,12 @@ import java.util.Date;
  * Engilsh description
  * todo
  * Polish description
- * Firma X posiada dział marketingowy, który chce zaimplementować system zarządzania promocjami, które będą wysyłane do użytkowników systemu za pomocą następujących kanałów (mail, sms, rozmowa telefoniczna, poczta). Zgodnie z wprowadzoną ustawą o RODO/GDPR, klienci mają prawo do wyrażenia woli jakimi kanałami chcą otrzymywać treści dotyczące promocji. Klienci dokonując zakupów zdobywają punkty lojalnościowe. Przy założeniu konta, użytkownik dostaje dodatkowe 40 punktów za każdy zaznaczony preferowany kanał komunikacji. W sytuacji, gdy nie ma sprecyzowanego wyboru kanału komunikacji dla promocji, należy uwzględnić następujące priorytety dla preferencji: 1 - mail, 2 - sms, 3- phone, 4 - poczta.
+ * Firma X posiada dział marketingowy, który chce zaimplementować system zarządzania promocjami, które będą wysyłane do użytkowników
+ * systemu za pomocą następujących kanałów (mail, sms, rozmowa telefoniczna, poczta). Zgodnie z wprowadzoną ustawą o RODO/GDPR, klienci mają
+ * prawo do wyrażenia woli jakimi kanałami chcą otrzymywać treści dotyczące promocji. Klienci dokonując zakupów zdobywają punkty lojalnościowe.
+ * Przy założeniu konta, użytkownik dostaje dodatkowe 40 punktów za każdy zaznaczony preferowany kanał komunikacji.
+ * W sytuacji, gdy nie ma sprecyzowanego wyboru kanału komunikacji dla promocji, należy uwzględnić następujące priorytety dla preferencji:
+ * 1 - mail, 2 - sms, 3- phone, 4 - poczta.
 
  Firma zaplanowała przetestować system dla następujacych promocji:
 
