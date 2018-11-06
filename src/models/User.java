@@ -15,28 +15,27 @@ public class User {
     private boolean byPhone;
     private int loyaltyPoints;
 
-
     public User(String emailAddress, String firstName, String surname, boolean byEmail, boolean byPhone, boolean byPost, boolean byText) {
         this.email = emailAddress;
         this.firstName = firstName;
         this.lastName = surname;
-        this.byEmail = byEmail;
-        this.byPhone = byPhone;
-        this.byPost = byPost;
-        this.byText = byText;
+        this.setByEmail(byEmail);
+        this.setByPhone(byPhone);
+        this.setByPost(byPost);
+        this.setByText(byText);
     }
 
-    public User(String emailAddrress, String firstName, String surname, boolean byEmail, boolean byPhone, boolean byPost, boolean byText, String phone, String address) {
-        this.email = emailAddrress;
+    public User(String emailAddress, String firstName, String surname, boolean byEmail, boolean byPhone, boolean byPost, boolean byText, String phone, String address) {
+        this.email = emailAddress;
         this.firstName = firstName;
         this.lastName = surname;
-        this.byEmail = byEmail;
-        this.byPhone = byPhone;
-        this.byPost = byPost;
-        this.byText = byText;
+        this.setByEmail(byEmail);
+        this.setByPhone(byPhone);
+        this.setByPost(byPost);
+        this.setByText(byText);
         this.phoneNumber = phone;
-        this.address = address;
-        this.loyaltyPoints = this.calculateLoyaltyPoints();
+        this.setAddress(address);
+        this.setLoyaltyPoints(this.calculateLoyaltyPoints());
     }
 
     private int calculateLoyaltyPoints(boolean... params) {
@@ -51,30 +50,90 @@ public class User {
 
     private int calculateLoyaltyPoints() {
         int result = 0;
-        if (this.byText) {
+        if (this.isByText()) {
             result = result + 40;
         }
-        if (this.byPost) {
+        if (this.isByPost()) {
             result += 40;
         }
-        if (this.byPhone) {
+        if (this.isByPhone()) {
             result += 40;
         }
-        if (this.byEmail) {
+        if (this.isByEmail()) {
             result += 40;
         }
         return result;
     }
 
     public void sendEmail() {
-        System.out.println(this.firstName + " " + this.lastName + " sent email");
+        System.out.println(this.getFirstName() + " " + this.getLastName() + " sent email");
     }
 
     public String getEmail() {
         return this.email;
     }
 
-    public void setEmail(String newEmail) {
-        this.email = newEmail;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public boolean isByEmail() {
+        return byEmail;
+    }
+
+    public boolean isByPost() {
+        return byPost;
+    }
+
+    public boolean isByText() {
+        return byText;
+    }
+
+    public boolean isByPhone() {
+        return byPhone;
+    }
+
+    public int getLoyaltyPoints() {
+        return loyaltyPoints;
+    }
+
+    public void setPhoneNumber(String newPhoneNumber) {
+        this.phoneNumber = newPhoneNumber;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setByEmail(boolean byEmail) {
+        this.byEmail = byEmail;
+    }
+
+    public void setByPost(boolean byPost) {
+        this.byPost = byPost;
+    }
+
+    public void setByText(boolean byText) {
+        this.byText = byText;
+    }
+
+    public void setByPhone(boolean byPhone) {
+        this.byPhone = byPhone;
+    }
+
+    public void setLoyaltyPoints(int loyaltyPoints) {
+        this.loyaltyPoints = loyaltyPoints;
     }
 }

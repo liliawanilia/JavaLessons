@@ -11,13 +11,8 @@ public class Main {
 
         System.out.println(user.getEmail());
         System.out.println(user1.getEmail());
-        user.setEmail("pawel.kubiak2@gmail.com");
-        System.out.println(user.getEmail());
-
-        int[] arr = new int[2];
-        User[] arr2 = new User[2];
-        arr2[0] = user;
-        arr2[1] = user1;
+        System.out.println(user.getFirstName());
+        System.out.println(user1.getFirstName());
 
         // Basics
         /*
