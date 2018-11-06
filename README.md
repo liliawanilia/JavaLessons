@@ -31,8 +31,10 @@ Simple java examples for my friends.
 
  Zadaniem będzie implementacja symulatora powyższego opisu systemu.
  
- * 2.1 Task - homework
- Try to implement generic helper class which will be responsible for:
+ * 2.0 Task
+ Implement class for User and Promotion based on above description. Class should contains at least one constructor, private fields and getters and setters methods. [Goal] - learn how to write class, create new instance of objects. Try to use Comparable interface and override toString() method.
+ 
+ * 2.1 Task - [homework] Try to implement generic helper class which will be responsible for:
     - get min value from array (public T getMinValue(T[] array))
     - get max value from array (public T getMaxValue(T[] array))
     - find item from array (public bool findItem(T[] array, T item))
@@ -46,9 +48,11 @@ Simple java examples for my friends.
     - https://dev.to/chrisvasqm/introduction-to-unit-testing-with-java-2544
     - https://www.tutorialspoint.com/java/java_generics.htm
 
+    [Goal] - learn how to create generic classes, implement simple algorithms on arrays, learn about TDD.
  
- * 2.2 Task - homework
- Try to implement generic class which will be similar to (2.1 Task) - however use List instead of an Array
+ * 2.2 Task - [homework] Try to implement generic class which will be similar to (2.1 Task) - however use List instead of an Array
  
     Helpful links:
     - http://tutorials.jenkov.com/java-collections/list.html
+    
+    [Goal] - learn how to use collections in Java, improve unit tests.
