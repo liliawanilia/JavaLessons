@@ -8,6 +8,7 @@ package utils;
  add item to array (public T[] addItem(T[] array, T item))
  remove item from array (public T[] removeItem(T[] array, T item))
  swap items in array. (public T[] swapItems(T[] array, T firstItem, T secondItem))
+ todo
  */
 public class ArrayHelper {
     public Integer getMinValue(int[] array) {
