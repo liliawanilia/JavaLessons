@@ -65,10 +65,6 @@ public class User {
         return result;
     }
 
-    public void sendEmail() {
-        System.out.println(this.getFirstName() + " " + this.getLastName() + " sent email");
-    }
-
     public String getEmail() {
         return this.email;
     }
@@ -135,5 +131,12 @@ public class User {
 
     public void setLoyaltyPoints(int loyaltyPoints) {
         this.loyaltyPoints = loyaltyPoints;
+    }
+
+    @Override
+    public String toString(){
+        return "FirstName: " + this.firstName +
+                "\nLastName: " + this.lastName +
+                "\nEmail: " + this.email;
     }
 }
