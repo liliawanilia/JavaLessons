@@ -33,12 +33,22 @@ Simple java examples for my friends.
  
  * 2.1 Task - homework
  Try to implement generic helper class which will be responsible for:
-    - get min value from array
-    - get max value from array
-    - get item from array
-    - add item to array
-    - remove item from array
-    - swap items in array.
- Please implement it using TDD.
+    - get min value from array (public T getMinValue(T[] array))
+    - get max value from array (public T getMaxValue(T[] array))
+    - find item from array (public bool findItem(T[] array, T item))
+    - add item to array (public T[] addItem(T[] array, T item))
+    - remove item from array (public T[] removeItem(T[] array, T item))
+    - swap items in array. (public T[] swapItems(T[] array, T firstItem, T secondItem))
+ 
+    Please implement it using TDD.
+ 
+    Helpful links:
+    - https://dev.to/chrisvasqm/introduction-to-unit-testing-with-java-2544
+    - https://www.tutorialspoint.com/java/java_generics.htm
+
+ 
  * 2.2 Task - homework
  Try to implement generic class which will be similar to (2.1 Task) - however use List instead of an Array
+ 
+    Helpful links:
+    - http://tutorials.jenkov.com/java-collections/list.html
