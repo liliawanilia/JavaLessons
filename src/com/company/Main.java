@@ -1,14 +1,11 @@
 package com.company;
 
-import LIVE.models.User;
-import examples.LoopTest;
-import examples.PromotionSimulator;
-
-import java.util.Scanner;
+import models.User;
 
 public class Main {
 
     public static void main(String[] args) {
+        // Live demo
         User user = new User("pawel.kubiak@gmail.com", "Paweł", "Kubiak", true, true, true, true, "48505869606", "testaddress");
         User user1 = new User("emil.d@gmail.com", "Emil", "D", true, false, false, false, "48500500500", "testaddress");
 
@@ -21,17 +18,12 @@ public class Main {
         User[] arr2 = new User[2];
         arr2[0] = user;
         arr2[1] = user1;
+
         // Basics
         /*
         Scanner scanner = new Scanner(System.in);
         LoopTest loopTest = new LoopTest(scanner);
         loopTest.test();
-        */
-
-        /*
-        //Introduction to OOP
-        PromotionSimulator simulator = new PromotionSimulator();
-        simulator.simulate();
         */
     }
 }

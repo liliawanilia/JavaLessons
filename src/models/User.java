@@ -1,4 +1,4 @@
-package LIVE.models;
+package models;
 
 /**
  * Created by pawelk on 30/10/2018.
@@ -15,7 +15,7 @@ public class User {
     private boolean byPhone;
     private int loyaltyPoints;
 
-    /*
+
     public User(String emailAddress, String firstName, String surname, boolean byEmail, boolean byPhone, boolean byPost, boolean byText) {
         this.email = emailAddress;
         this.firstName = firstName;
@@ -25,7 +25,7 @@ public class User {
         this.byPost = byPost;
         this.byText = byText;
     }
-    */
+
     public User(String emailAddrress, String firstName, String surname, boolean byEmail, boolean byPhone, boolean byPost, boolean byText, String phone, String address) {
         this.email = emailAddrress;
         this.firstName = firstName;
