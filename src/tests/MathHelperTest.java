@@ -15,7 +15,7 @@ public class MathHelperTest {
         MathHelper mathHelper = new MathHelper();
 
         // Act
-        boolean result = mathHelper.IsPrimeNumber(providedNumber);
+        boolean result = mathHelper.isPrimeNumber(providedNumber);
 
         // Assert
         Assertions.assertEquals(true, result);
@@ -28,7 +28,7 @@ public class MathHelperTest {
         MathHelper mathHelper = new MathHelper();
 
         // Act
-        boolean result = mathHelper.IsPrimeNumber(providedNumber);
+        boolean result = mathHelper.isPrimeNumber(providedNumber);
 
         // Assert
         Assertions.assertEquals(false, result);
@@ -41,7 +41,7 @@ public class MathHelperTest {
         MathHelper mathHelper = new MathHelper();
 
         // Act
-        boolean result = mathHelper.IsPrimeNumber(providedNumber);
+        boolean result = mathHelper.isPrimeNumber(providedNumber);
 
         // Assert
         Assertions.assertEquals(false, result);

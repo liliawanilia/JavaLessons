@@ -1,5 +1,7 @@
 package utils;
 
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 /**
  * Created by pawelk on 06/11/2018.
  * get min value from array (public T getMinValue(T[] array))
@@ -11,6 +13,18 @@ package utils;
  todo
  */
 public class ArrayHelper {
+    // [3,2,1] 5 => [3,2,1,5]
+    public Integer[] addItem(Integer[] oldArray, Integer newItem) {
+        Integer[] newArray = new Integer[oldArray.length + 1];
+
+        for (int i = 0; i < oldArray.length; i++) {
+            newArray[i] = oldArray[i];
+        }
+        newArray[newArray.length-1] = newItem;
+
+        return newArray;
+    }
+
     public Integer getMinValue(int[] array) {
         int min = Integer.MAX_VALUE;
 

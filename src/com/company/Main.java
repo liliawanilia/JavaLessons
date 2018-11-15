@@ -34,6 +34,6 @@ public class Main {
         */
 
         MathHelper mathHelper = new MathHelper();
-        boolean result = mathHelper.IsPrimeNumber(5);
+        boolean result = mathHelper.isPrimeNumber(5);
     }
 }

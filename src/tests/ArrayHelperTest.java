@@ -91,4 +91,44 @@ public class ArrayHelperTest {
         // Assert
         Assertions.assertEquals(expectedValue, result);
     }
+
+    /*
+        1. array is empty => new array should contains one element, equal to provide item
+        2. array is not empty => new array should contains one additional element, last element in array should be equal to provided item
+     */
+    @Test
+    public void addItem_WhenArrayIsEmpty_ThenShouldReturnArrayWithSingleElement() {
+        // Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer[] emptyArray = new Integer[0];
+        Integer newElement = 10;
+
+        // Act
+        Integer[] result = arrayHelper.addItem(emptyArray, newElement);
+
+        // Assert
+        Assertions.assertEquals(1, result.length);
+        Assertions.assertEquals(newElement, result[0]);
+    }
+
+    @Test
+    public void addItem_WhenArrayIsNotEmpty_ThenShouldContainAdditionalProvidedElement() {
+        // Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer[] nonEmptyArray = new Integer[3];
+        nonEmptyArray[0] = 1;
+        nonEmptyArray[1] = 2;
+        nonEmptyArray[2] = 3;
+        Integer newElement = 10;
+
+        // Act
+        Integer[] result = arrayHelper.addItem(nonEmptyArray, newElement);
+
+        // Assert
+        Assertions.assertEquals(nonEmptyArray.length + 1, result.length);
+        Assertions.assertEquals(nonEmptyArray[0], result[0]);
+        Assertions.assertEquals(nonEmptyArray[1], result[1]);
+        Assertions.assertEquals(nonEmptyArray[2], result[2]);
+        Assertions.assertEquals(newElement, result[3]);
+    }
 }

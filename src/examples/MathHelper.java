@@ -6,7 +6,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
  * Created by pawelk on 15/11/2018.
  */
 public class MathHelper {
-    public boolean IsPrimeNumber(int number) {
+    public boolean isPrimeNumber(int number) {
         if (number < 0) {
             return false;
         }
