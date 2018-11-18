@@ -1,7 +1,5 @@
 package utils;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 /**
  * Created by pawelk on 06/11/2018.
  * get min value from array (public T getMinValue(T[] array))
@@ -47,5 +45,59 @@ public class ArrayHelper {
             }
         }
         return false;
+    }
+
+    public Integer[] removeItem(Integer[] array, Integer item) {
+        int actualSize = array.length;
+        Integer[] maxArray = new Integer[1];
+        Integer[] minArray = new Integer[1];
+        maxArray[0] = Integer.MAX_VALUE;
+        minArray[0] = Integer.MIN_VALUE;
+
+        if (array.length == 0) {
+            return minArray;
+        }
+
+        if (item > actualSize || item < 1) {
+            return maxArray;
+        }
+
+        Integer[] newArray = new Integer[actualSize - 1];
+        boolean flag = false;
+        for (int i = 0; i < actualSize - 1; i++) {
+            if (i == item - 1) {
+                flag = true;
+                newArray[i] = array[i + 1];
+                continue;
+            }
+            if (flag) {
+                newArray[i] = array[i + 1];
+            }
+            else {
+                newArray[i] = array[i];
+            }
+        }
+        return newArray;
+    }
+
+    public Integer[] swapItems(Integer[] array, Integer firstItem, Integer secondItem) {
+        Integer[] newArray = new Integer[array.length];
+        if (  firstItem  > array.length | secondItem  > array.length ||
+                 firstItem < 1| secondItem < 1) {
+            return null;
+        }
+
+        for (int i = 0; i < array.length - 1; i++) {
+            if (i == firstItem - 1){
+                newArray[i] = array[secondItem - 1];
+            }
+            else if (i == secondItem - 1) {
+                newArray[i] = array[firstItem -1];
+            }
+            else {
+                newArray[i] = array[i];
+            }
+        }
+        return newArray;
     }
 }

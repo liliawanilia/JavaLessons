@@ -131,4 +131,72 @@ public class ArrayHelperTest {
         Assertions.assertEquals(nonEmptyArray[2], result[2]);
         Assertions.assertEquals(newElement, result[3]);
     }
+
+    /**
+     * Remove item tests
+     * 1. Remove an item from empty array
+     * 2. Remove an item that is out of the length of array
+     * 3. Remove given item form the array
+     */
+    @Test
+    public void removeItem_WhenArrayIsEmpty_ThenReturnArrayWithMinInteger(){
+        //Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer[] emptyArray = new Integer[0];
+        Integer item = 1;
+        Integer[] expectedResult = new Integer[1];
+        expectedResult[0] = Integer.MIN_VALUE;
+
+        //Act
+        Integer[] result = arrayHelper.removeItem(emptyArray, item);
+
+        //Assert
+        Assertions.assertEquals(expectedResult[0], result[0]);
+    }
+
+    @Test
+    public void removeItem_WhenGivenItemIsOutOfArrayRange_ThenReturnArrayWithMaxInteger(){
+        //Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer[] array = new Integer[3];
+        array[0] = 1;
+        array[1] = 2;
+        array[2] = 3;
+        Integer item = 4;
+
+        Integer[] expectedResult = new Integer[1];
+        expectedResult[0] = Integer.MAX_VALUE;
+
+        //Act
+        Integer[] result = arrayHelper.removeItem(array, item);
+
+        //Assert
+        Assertions.assertEquals(expectedResult[0], result[0]);
+    }
+
+    @Test
+    public void removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray(){
+        //Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer[] array = new Integer[5];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 2;
+        }
+
+        Integer item = 3;
+
+        //Act
+        Integer[] result = arrayHelper.removeItem(array, item);
+
+        //Assert
+        Assertions.assertEquals(array.length - 1, result.length);
+        Assertions.assertEquals(array[0], result[0]);
+        Assertions.assertEquals(array[1], result[1]);
+        Assertions.assertEquals(array[3], result[2]);
+        Assertions.assertEquals(array[4], result[3]);
+    }
+    /**
+     * Swap items tests
+     */
 }
