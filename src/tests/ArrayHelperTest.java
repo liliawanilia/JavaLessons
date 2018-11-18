@@ -198,5 +198,84 @@ public class ArrayHelperTest {
     }
     /**
      * Swap items tests
+     * 1. Array with less than 2 elements
+     * 2. Elements out of range of array
+     * 3. Swap 2 elements
      */
+
+    @Test
+    public void swapItems_WhenArrayHasLessThanTwoElements_ThenReturnArrayWithMinInteger(){
+        //Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer[] expectedResult = new Integer[1];
+        Integer[] array = new Integer[1];
+
+        expectedResult[0] = Integer.MIN_VALUE;
+        array[0] = 3;
+        Integer firstItem = 1;
+        Integer secondItem = 4;
+
+        //Act
+        Integer[] result = arrayHelper.swapItems(array, firstItem, secondItem);
+
+        //Assert
+        Assertions.assertEquals(expectedResult[0], result[0]);
+        Assertions.assertEquals(1, result.length);
+    }
+
+    @Test
+    public void swapItems_WhenItemsAreOutOfArrayRange_ThenReturnMaxInteger(){
+        //Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer[] expectedResult = new Integer[1];
+        Integer[] array = new Integer[5];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 2;
+        }
+
+        expectedResult[0] = Integer.MAX_VALUE;
+        Integer firstItem = 3;
+        Integer secondItem = -122;
+
+        //Act
+        Integer[] result = arrayHelper.swapItems(array, firstItem, secondItem);
+
+        //Assertion
+        Assertions.assertEquals(expectedResult[0], result[0]);
+        Assertions.assertEquals(1, result.length);
+    }
+
+    @Test
+    public void swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems() {
+        //Arrange
+        ArrayHelper arrayHelper = new ArrayHelper();
+        Integer arrayLength = 6;
+        Integer[] array = new Integer[arrayLength];
+        Integer[] expectedResult = new Integer[arrayLength];
+        Integer firstItem = 5;
+        Integer secondItem = 6;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 2;
+            expectedResult[i] = i + 2;
+        }
+
+        Integer temp;
+        temp = expectedResult[firstItem - 1];
+        expectedResult[firstItem - 1] = expectedResult[secondItem - 1];
+        expectedResult[secondItem - 1] = temp;
+
+        //Act
+        Integer[] result = arrayHelper.swapItems(array, firstItem, secondItem);
+
+        //Assert
+        Assertions.assertEquals(expectedResult.length, result.length);
+        Assertions.assertEquals(expectedResult[0], result[0]);
+        Assertions.assertEquals(expectedResult[1], result[1]);
+        Assertions.assertEquals(expectedResult[2], result[2]);
+        Assertions.assertEquals(expectedResult[3], result[3]);
+        Assertions.assertEquals(expectedResult[4], result[4]);
+        Assertions.assertEquals(expectedResult[5], result[5]);
+    }
 }
+

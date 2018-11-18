@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6712f24e-c1a0-44aa-b778-e10306150750" name="Default Changelist" comment="" />
+    <list default="true" id="6712f24e-c1a0-44aa-b778-e10306150750" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ArrayHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ArrayHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ArrayHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ArrayHelper.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,13 +45,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1528" />
+          <entry key="java" value="3249" />
           <entry key="txt" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1528" />
+          <entry key="JAVA" value="3249" />
           <entry key="PLAIN_TEXT" value="57" />
         </counts>
       </usages-collector>
@@ -60,11 +64,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tests/ArrayHelperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+            <state relative-caret-position="261">
+              <caret line="256" column="31" lean-forward="true" selection-start-line="256" selection-start-column="31" selection-end-line="256" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getMinValue_WhenArrayIsEmpty_ThenReturnNull#0;class#ArrayHelperTest#0" />
@@ -75,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils/ArrayHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            <state relative-caret-position="222">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -145,7 +149,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542573118440" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542576303491" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -160,39 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray">
-    <configuration name="ArrayHelperTest.removeItem_WhenArrayIsEmpty_ThenReturnArrayWithMinInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaLessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ArrayHelperTest" />
-      <option name="METHOD_NAME" value="removeItem_WhenArrayIsEmpty_ThenReturnArrayWithMinInteger" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayHelperTest.removeItem_WhenArrayIsEmpty_ThenReturnMaxInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaLessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ArrayHelperTest" />
-      <option name="METHOD_NAME" value="removeItem_WhenArrayIsEmpty_ThenReturnMaxInteger" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems">
     <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaLessons" />
       <extension name="coverage">
@@ -225,18 +197,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArrayHelperTest.swapItems_WhenArrayHasLessThanTwoElements_ThenReturnArrayWithMinInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ArrayHelperTest" />
+      <option name="METHOD_NAME" value="swapItems_WhenArrayHasLessThanTwoElements_ThenReturnArrayWithMinInteger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ArrayHelperTest" />
+      <option name="METHOD_NAME" value="swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayHelperTest.swapItems_WhenItemsAreOutOfArrayRange_ThenReturnMaxInteger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaLessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ArrayHelperTest" />
+      <option name="METHOD_NAME" value="swapItems_WhenItemsAreOutOfArrayRange_ThenReturnMaxInteger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenArrayIsEmpty_ThenReturnMaxInteger" />
-      <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenArrayIsEmpty_ThenReturnArrayWithMinInteger" />
       <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenGivenItemIsOutOfArrayRange_ThenReturnArrayWithMaxInteger" />
       <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" />
+      <item itemvalue="JUnit.ArrayHelperTest.swapItems_WhenArrayHasLessThanTwoElements_ThenReturnArrayWithMinInteger" />
+      <item itemvalue="JUnit.ArrayHelperTest.swapItems_WhenItemsAreOutOfArrayRange_ThenReturnMaxInteger" />
+      <item itemvalue="JUnit.ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" />
+        <item itemvalue="JUnit.ArrayHelperTest.swapItems_WhenItemsAreOutOfArrayRange_ThenReturnMaxInteger" />
+        <item itemvalue="JUnit.ArrayHelperTest.swapItems_WhenArrayHasLessThanTwoElements_ThenReturnArrayWithMinInteger" />
         <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" />
         <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenGivenItemIsOutOfArrayRange_ThenReturnArrayWithMaxInteger" />
-        <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenArrayIsEmpty_ThenReturnArrayWithMinInteger" />
-        <item itemvalue="JUnit.ArrayHelperTest.removeItem_WhenArrayIsEmpty_ThenReturnMaxInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -262,39 +284,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 20h 58m 38s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 12m 06s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 00m 26s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 12m 26s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 00m 42s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 13m 48s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 02m 31s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 14m 31s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 02m 42s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 22m 27s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 03m 32s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 23m 11s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 08m 57s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 23m 54s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 10m 14s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 24m 12s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 10m 38s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 24m 25s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayHelperTest_removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray - 2018.11.18 at 21h 11m 09s.xml">
-      <configuration name="ArrayHelperTest.removeItem_WhenGivenItemIsAPartOfArray_ThenIsRemovedFromTheArray" configurationId="JUnit" />
+    <history-entry file="ArrayHelperTest_swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems - 2018.11.18 at 22h 24m 56s.xml">
+      <configuration name="ArrayHelperTest.swapItems_WhenGivenItemsAreInArrayRange_ThenReturnArrayWithSwappedItems" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -343,6 +366,12 @@
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/ArrayHelperTest.java</url>
+          <line>268</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -378,23 +407,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/ArrayHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/ArrayHelperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        <state relative-caret-position="261">
+          <caret line="256" column="31" lean-forward="true" selection-start-line="256" selection-start-column="31" selection-end-line="256" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getMinValue_WhenArrayIsEmpty_ThenReturnNull#0;class#ArrayHelperTest#0" />
             <element signature="method#findItem_WhenArrayIsNotEmptyAndElementExistsInArray_ThenReturnTrue#0;class#ArrayHelperTest#0" />
             <element signature="method#addItem_WhenArrayIsEmpty_ThenShouldReturnArrayWithSingleElement#0;class#ArrayHelperTest#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/ArrayHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
         </state>
       </provider>
     </entry>

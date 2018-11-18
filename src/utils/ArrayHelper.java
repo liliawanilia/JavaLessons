@@ -82,12 +82,21 @@ public class ArrayHelper {
 
     public Integer[] swapItems(Integer[] array, Integer firstItem, Integer secondItem) {
         Integer[] newArray = new Integer[array.length];
-        if (  firstItem  > array.length | secondItem  > array.length ||
-                 firstItem < 1| secondItem < 1) {
-            return null;
+        Integer[] minArray = new Integer[1];
+        Integer[] maxArray = new Integer[1];
+        minArray[0] = Integer.MIN_VALUE;
+        maxArray[0] = Integer.MAX_VALUE;
+
+        if (array.length < 2) {
+            return minArray;
         }
 
-        for (int i = 0; i < array.length - 1; i++) {
+        if (firstItem  > array.length | secondItem  > array.length ||
+                 firstItem < 1| secondItem < 1) {                      //Here I am not sure if the statement is correct, but works fine :D
+            return maxArray;
+        }
+
+        for (int i = 0; i < array.length; i++) {
             if (i == firstItem - 1){
                 newArray[i] = array[secondItem - 1];
             }
