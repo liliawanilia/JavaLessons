@@ -2,6 +2,9 @@ package utils;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * Created by pawelk on 20/11/2018.
  *  *get min value from array (public T getMinValue(T[] array))
@@ -14,8 +17,9 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class ArrayHelperGeneric<T> {
     public ArrayHelperGeneric(){
     }
+    // https://stackoverflow.com/questions/529085/how-to-create-a-generic-array-in-java
     public T[] addItem(T[] oldArray, T newItem) {
-        T[] newArray = (T[]) new Object[oldArray.length + 1];
+        T[] newArray = Arrays.copyOf(oldArray, oldArray.length + 1);
 
         for (int i = 0; i < oldArray.length; i++) {
             newArray[i] = oldArray[i];
